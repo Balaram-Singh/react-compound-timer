@@ -1,5 +1,5 @@
 {
-  "name": "react-compound-timer",
+  "name": "@rjs/react-compound-timer",
   "version": "1.1.15",
   "description": "Timer compound react component",
   "main": "build",
@@ -11,13 +11,14 @@
     "compound",
     "stopwatch"
   ],
-  "homepage": "https://github.com/volkov97/react-compound-timer",
+  "homepage": "https://github.com/Balaram-Singh/react-compound-timer",
   "scripts": {
     "start": "npx styleguidist server",
     "build": "npx styleguidist build",
     "test": "jest",
     "transpile": "tsc",
-    "prepublishOnly": "npm run transpile"
+    "prepublishOnly": "npm run transpile",
+    "publish-npm": "npm publish --access public"
   },
   "author": "German Volkov <Volkov.german.1997@gmail.com> (https://volkov97.com)",
   "license": "ISC",
@@ -37,6 +38,9 @@
     "typescript": "^3.3.3",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0.2 || 18.2.0"
   },
   "peerDependencies": {
     "react": "^16.8.6"
